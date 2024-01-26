@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dunits"
+requires-python = ">=3.10"
+version = "1.0"
+description = "Utilities to analyze speech discrete units"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Maxime Poli" }]
+dependencies = ["numpy", "tabulate"]
+
+[project.optional-dependencies]
+plot = ["matplotlib", "seaborn"]
+
+[tool.setuptools]
+py-modules = ["dunits"]
+
+[tool.ruff]
+line-length = 119
